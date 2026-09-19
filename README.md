@@ -64,9 +64,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
     ```
     Otwórz w przeglądarce adres wskazany w konsoli (domyślnie `http://localhost:5173`).
 
----
-
-## Sterowanie w grze
+### Sterowanie w grze
 
 | Klawisz | Akcja |
 | :--- | :--- |
