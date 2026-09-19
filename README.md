@@ -37,6 +37,14 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 
 ---
 
+## Instrukcja instalacji i uruchomienia
+
+### Wymagania
+
+*   Zainstalowane środowisko [Node.js](https://nodejs.org/) (wersja 16.x lub nowsza).
+*   Menedżer pakietów **npm** (dołączony do Node.js).
+*   Nowoczesna przeglądarka internetowa ze wsparciem dla WebGL.
+
 ### Instrukcja
 
 1.  **Sklonuj repozytorium:**
