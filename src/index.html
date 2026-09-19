@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Fall 3D</title>
+    <style>
+        body { margin: 0; }
+        #score { 
+            position: absolute; 
+            top: 10px; 
+            right: 10px; 
+            font-size: 24px; 
+            color: white; 
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        #controls { 
+            position: absolute; 
+            bottom: 10px; 
+            right: 10px; 
+            font-size: 24px; 
+            color: white; 
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        #gameOverText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div id="controls">W,A,S,D - Controls <br> Space - Place immediately <br> Left Arrow, Right Arrow - Turn left, Turn right  </div>
+    <div id="gameOverText"></div>
+    <script type="module" src="./block-fall.js"></script>
+</body>
+</html>
