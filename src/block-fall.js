@@ -119,18 +119,23 @@ function addGridWalls() {
 }
 
 function generateNewBlock() {
-    const blockTypes = [
+const blockTypes = [
         { type: 'cube', positions: [[0, 0, 0]] },
-        { type: 'L', positions: [[0, 0, 0], [1, 0, 0], [2, 0, 0], [2, 0, 1]] },
+        { type: 'L', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [1, 0, 1]] },
         { type: 'square', positions: [[0, 0, 0], [1, 0, 0], [0, 0, 1], [1, 0, 1]] },
         { type: 'I', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
-        { type: 'Z', positions: [[0, 0, 0], [1, 0, 0], [1, 0, 1], [2, 0, 1]] },
-        { type: 'S', positions: [[0, 0, 1], [1, 0, 1], [1, 0, 0], [2, 0, 0]] },
-        { type: 'J', positions: [[0, 0, 0], [0, 0, 1], [1, 0, 1], [2, 0, 1]] },
-        { type: 'T', positions: [[0, 0, 1], [1, 0, 0], [1, 0, 1], [2, 0, 1]] }
+        { type: 'Z', positions: [[-1, 0, 0], [0, 0, 0], [0, 0, 1], [1, 0, 1]] },
+        { type: 'S', positions: [[-1, 0, 1], [0, 0, 1], [0, 0, 0], [1, 0, 0]] },
+        { type: 'J', positions: [[-1, 0, 1], [-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
+        { type: 'T', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [0, 0, 1]] }
     ];
     
-    const randomType = blockTypes[Math.floor(Math.random() * blockTypes.length)];
+    let randomType;
+    if (Math.random() < 0.30) {
+        randomType = blockTypes[0];
+    } else {
+        randomType = blockTypes[Math.floor(Math.random() * blockTypes.length)];
+    }
 
     const blockGroup = new THREE.Group();
 
@@ -221,7 +226,7 @@ function checkLayers() {
         if (grid[y].every(row => row.every(cell => cell !== null))) {
             score += 100;
             document.getElementById('score').innerText = `Score: ${score}`;
-            fallSpeed += 0.005;
+            fallSpeed += 0.001;
             removeLayer(y);
         }
     }
@@ -313,12 +318,27 @@ function moveBlock(deltaX, deltaZ) {
 }
 
 function dropBlockImmediately() {
+    if (!currentBlock) return;
+
+    currentBlock.position.y = Math.round(currentBlock.position.y);
+
+    if (checkCollision(currentBlock)) {
+        currentBlock.position.y += 1;
+    }
+
     while (!checkCollision(currentBlock)) {
         currentBlock.position.y -= 1;
     }
-    currentBlock.position.y += fallSpeed;
-    currentBlock.position.y = Math.floor(currentBlock.position.y + 1);
+
+    currentBlock.position.y += 1;
+    currentBlock.position.y = Math.round(currentBlock.position.y);
     placeBlock(currentBlock);
+
+    if (currentBlock && currentBlock.position.y >= 10) {
+        gameOver();
+        return;
+    }
+
     generateNewBlock();
 }
 
