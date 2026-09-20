@@ -81,6 +81,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 | <kbd>←</kbd> (Strzałka w lewo) | Obrót w lewo wokół osi $Y$ |
 | <kbd>→</kbd> (Strzałka w prawo) | Obrót w prawo wokół osi $Y$ |
 | <kbd>Spacja</kbd> | Natychmiastowe upuszczenie bloku na spód |
+| <kbd>F5</kbd> | Restart gry |
 
 ---
 
