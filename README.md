@@ -2,6 +2,12 @@
 
 Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona przy użyciu technologii Three.js oraz Vite. Projekt przenosi tradycyjne mechaniki układania klocków w przestrzeń 3D, oferując graczowi świeże spojrzenie na sprawdzoną rozgrywkę.
 
+> [!IMPORTANT]
+> ### Wersja demonstracyjna na żywo (Live Demo)
+> Przetestuj działającą aplikację: **[adikungen.github.io](https://adikungen.github.io/Projekt_IAM_Budny_Adrian_PAW3/)**
+>
+> *Opis sterowania znajduje się w prawym dolnym rogu aplikacji oraz w sekcji [Sterowanie w grze](#sterowanie-w-grze)*
+
 ---
 
 ## O projekcie
@@ -75,6 +81,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 | <kbd>←</kbd> (Strzałka w lewo) | Obrót w lewo wokół osi $Y$ |
 | <kbd>→</kbd> (Strzałka w prawo) | Obrót w prawo wokół osi $Y$ |
 | <kbd>Spacja</kbd> | Natychmiastowe upuszczenie bloku na spód |
+| <kbd>F5</kbd> | Restart gry |
 
 ---
 
