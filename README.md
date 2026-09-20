@@ -34,6 +34,16 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 
 ---
 
+## Demo / Prezentacja działania
+
+Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania bloków w siatce $5\times5\times12$, przez dynamiczne manewrowanie klockami w przestrzeni trójwymiarowej (rotacje, translacje oraz natychmiastowe opuszczanie tzw. hard drop), aż po detekcję kolizji, mechanizm czyszczenia wypełnionych warstw wraz z aktualizacją punktacji. Dodatkowo w trakcie prezentacji zilustrowano zachowanie silnika gry w sytuacjach granicznych (np. blokowanie niepoprawnych ruchów poza granice siatki), co demonstruje poprawność zaimplementowanego modelu kolizji i stabilność pętli renderowania.
+
+<p align="center">
+  <img src="docs/gifs/demo.gif" alt="Prezentacja przepływu gry" width="1920">
+</p>
+
+---
+
 ## Technologie i narzędzia
 
 * **Grafika 3D / WebGL:** [Three.js](https://threejs.org/) (renderowanie sceny 3D, oświetlenie, siatka geometrii, dynamiczne materiały i ramki bloków)
