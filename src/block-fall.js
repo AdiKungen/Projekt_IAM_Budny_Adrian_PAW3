@@ -120,21 +120,26 @@ function addGridWalls() {
 
 function generateNewBlock() {
 const blockTypes = [
-        { type: 'cube', positions: [[0, 0, 0]] },
-        { type: 'L', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [1, 0, 1]] },
-        { type: 'square', positions: [[0, 0, 0], [1, 0, 0], [0, 0, 1], [1, 0, 1]] },
-        { type: 'I', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
-        { type: 'Z', positions: [[-1, 0, 0], [0, 0, 0], [0, 0, 1], [1, 0, 1]] },
-        { type: 'S', positions: [[-1, 0, 1], [0, 0, 1], [0, 0, 0], [1, 0, 0]] },
-        { type: 'J', positions: [[-1, 0, 1], [-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
-        { type: 'T', positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [0, 0, 1]] }
+        { type: 'cube', weight: 15, positions: [[0, 0, 0]] },
+        { type: 'L', weight: 4, positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [1, 0, 1]] },
+        { type: 'square', weight: 5, positions: [[0, 0, 0], [1, 0, 0], [0, 0, 1], [1, 0, 1]] },
+        { type: 'I', weight: 3, positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
+        { type: 'Z', weight: 1, positions: [[-1, 0, 0], [0, 0, 0], [0, 0, 1], [1, 0, 1]] },
+        { type: 'S', weight: 1, positions: [[-1, 0, 1], [0, 0, 1], [0, 0, 0], [1, 0, 0]] },
+        { type: 'J', weight: 4, positions: [[-1, 0, 1], [-1, 0, 0], [0, 0, 0], [1, 0, 0]] },
+        { type: 'T', weight: 5, positions: [[-1, 0, 0], [0, 0, 0], [1, 0, 0], [0, 0, 1]] }
     ];
     
-    let randomType;
-    if (Math.random() < 0.30) {
-        randomType = blockTypes[0];
-    } else {
-        randomType = blockTypes[Math.floor(Math.random() * blockTypes.length)];
+    const totalWeight = blockTypes.reduce((sum, block) => sum + block.weight, 0);
+    let randomNum = Math.random() * totalWeight;
+
+    let randomType = blockTypes[0];
+    for (const block of blockTypes) {
+        if (randomNum < block.weight) {
+            randomType = block;
+            break;
+        }
+        randomNum -= block.weight;
     }
 
     const blockGroup = new THREE.Group();
@@ -226,7 +231,7 @@ function checkLayers() {
         if (grid[y].every(row => row.every(cell => cell !== null))) {
             score += 100;
             document.getElementById('score').innerText = `Score: ${score}`;
-            fallSpeed += 0.001;
+            fallSpeed += 0.002;
             removeLayer(y);
         }
     }
