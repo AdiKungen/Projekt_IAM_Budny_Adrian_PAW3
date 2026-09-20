@@ -37,6 +37,14 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 
 ---
 
+## Instrukcja instalacji i uruchomienia
+
+### Wymagania
+
+*   Zainstalowane środowisko [Node.js](https://nodejs.org/) (wersja 16.x lub nowsza).
+*   Menedżer pakietów **npm** (dołączony do Node.js).
+*   Nowoczesna przeglądarka internetowa ze wsparciem dla WebGL.
+
 ### Instrukcja
 
 1.  **Sklonuj repozytorium:**
@@ -56,9 +64,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
     ```
     Otwórz w przeglądarce adres wskazany w konsoli (domyślnie `http://localhost:5173`).
 
----
-
-## Sterowanie w grze
+### Sterowanie w grze
 
 | Klawisz | Akcja |
 | :--- | :--- |
