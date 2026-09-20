@@ -1,6 +1,6 @@
 # Block Fall 3D - Webowa gra zręcznościowa
 
-Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona przy użyciu technologii Three.js oraz Vite. Projekt przenosi tradycyjne mechaniki układania klocków w przestrzeń 3D, oferując graczowi świeże spojrzenie na sprawdzoną rozgrywkę.
+Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona przy użyciu technologii Three.js oraz Vite. Projekt przenosi tradycyjne mechaniki układania bloków w przestrzeń 3D, oferując graczowi świeże spojrzenie na sprawdzoną rozgrywkę.
 
 > [!IMPORTANT]
 > ### Wersja demonstracyjna na żywo (Live Demo)
@@ -13,7 +13,7 @@ Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona 
 ## O projekcie
 Projekt został wykonany w ramach zajęć „Interaktywne aplikacje multimedialne” na semestrze letnim 2023/2024, studiów pierwszego stopnia.
 
-Projekt powstał jako nowoczesna reinterpretacja legendarnej gry komputerowej o układaniu klocków stworzonej przez Aleksieja Pażytnowa. Podczas gdy większość współczesnych wariantów ogranicza się do tradycyjnej, dwuwymiarowej planszy, niniejsza aplikacja wzbogaca mechanikę o trzeci wymiar.
+Projekt powstał jako nowoczesna reinterpretacja legendarnej gry komputerowej o układaniu bloków stworzonej przez Aleksieja Pażytnowa. Podczas gdy większość współczesnych wariantów ogranicza się do tradycyjnej, dwuwymiarowej planszy, niniejsza aplikacja wzbogaca mechanikę o trzeci wymiar.
 
 Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa poziom trudności, zmuszając gracza do planowania ruchów w siatce $5 \times 12 \times 5$. Całość opiera się na lekkim, przeglądarkowym silniku 3D z intuicyjnym interfejsem użytkownika i płynną mechaniką kolizji.
 
@@ -24,7 +24,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 *   **Trójwymiarowa plansza gry:** Przestrzeń o wymiarach $5 \times 12 \times 5$ ograniczona przejrzystymi, siatkowymi ścianami ułatwiającymi orientację przestrzenną.
 *   **Pula różnorodnych klocków 3D:** Losowe generowanie zdefiniowanych figur (m.in. Cube, J, L, Square, I, S, Z, T).
 *   **Wielokierunkowe sterowanie:**
-    *   Ruch w płaszczyźnie poziomej (osie X i Z).
+    *   Ruch w płaszczyźnie poziomej (osie $X$ i $Z$).
     *   Obrót brył wokół osi pionowej (o kąt $\frac{\pi}{2}$).
     *   Natychmiastowe zrzucenie klocka na dno lub na wcześniej ułożone elementy.
 *   **Dynamiczna kolorystyka warstw:** Automatyczna zmiana koloru klocków po ułożeniu w zależności od wysokości warstwy (indeksu $Y$).
@@ -36,7 +36,7 @@ Dodatkowa oś przestrzenna wprowadza zupełnie nową dynamikę i zwiększa pozio
 
 ## Demo / Prezentacja działania
 
-Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania bloków w siatce $5\times5\times12$, przez dynamiczne manewrowanie klockami w przestrzeni trójwymiarowej (rotacje, translacje oraz natychmiastowe opuszczanie tzw. hard drop), aż po detekcję kolizji, mechanizm czyszczenia wypełnionych warstw wraz z aktualizacją punktacji. Dodatkowo w trakcie prezentacji zilustrowano zachowanie silnika gry w sytuacjach granicznych (np. blokowanie niepoprawnych ruchów poza granice siatki), co demonstruje poprawność zaimplementowanego modelu kolizji i stabilność pętli renderowania.
+Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania bloków w siatce $5 \times 12 \times 5$, przez dynamiczne manewrowanie klockami w przestrzeni trójwymiarowej (rotacje, translacje oraz natychmiastowe opuszczanie tzw. hard drop), aż po detekcję kolizji, mechanizm czyszczenia wypełnionych warstw wraz z aktualizacją punktacji. Dodatkowo w trakcie prezentacji zilustrowano zachowanie silnika gry w sytuacjach granicznych (np. blokowanie niepoprawnych ruchów poza granice siatki), co demonstruje poprawność zaimplementowanego modelu kolizji i stabilność pętli renderowania.
 
 <p align="center">
   <img src="docs/gifs/demo.gif" alt="Prezentacja przepływu gry" width="1920">
