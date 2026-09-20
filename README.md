@@ -78,7 +78,7 @@ Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania
     ```bash
     npm run dev
     ```
-    Otwórz w przeglądarce adres wskazany w konsoli (domyślnie `http://localhost:5173`).
+    Otwórz w przeglądarce adres wskazany w konsoli (domyślnie `http://localhost:5173/Projekt_IAM_Budny_Adrian_PAW3/`).
 
 ### Sterowanie w grze
 
