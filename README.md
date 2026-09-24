@@ -1,6 +1,6 @@
 # Block Fall 3D - Webowa gra zręcznościowa
 
-Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona przy użyciu technologii Three.js oraz Vite. Projekt przenosi tradycyjne mechaniki układania bloków w przestrzeń 3D, oferując graczowi świeże spojrzenie na sprawdzoną rozgrywkę..
+Trójwymiarowa adaptacja klasycznej gry zręcznościowej z 1984 roku, stworzona przy użyciu technologii Three.js oraz Vite. Projekt przenosi tradycyjne mechaniki układania bloków w przestrzeń 3D, oferując graczowi świeże spojrzenie na sprawdzoną rozgrywkę.
 
 > [!IMPORTANT]
 > ### Wersja demonstracyjna na żywo (Live Demo)
