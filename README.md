@@ -42,6 +42,11 @@ Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania
   <img src="docs/gifs/demo.gif" alt="Prezentacja przepływu gry" width="1920">
 </p>
 
+> [!NOTE]
+> **Informacja dotycząca prezentacji na GIF-ie (Wersja demonstracyjna):**   
+>
+> Z uwagi na automatyczne skalowanie animacji GIF przez interfejs GitHuba cienkie krawędzie bloków i siatka mogą na podglądzie migotać lub zanikać. Aby obejrzeć prezentację w pełnej rozdzielczości i bez zniekształceń, kliknij w plik animacji bezpośrednio w repozytorium lub przetestuj grę w sekcji [Wersja demonstracyjna na żywo (Live Demo)](#wersja-demonstracyjna-na-żywo-live-demo).
+
 ---
 
 ## Technologie i narzędzia
