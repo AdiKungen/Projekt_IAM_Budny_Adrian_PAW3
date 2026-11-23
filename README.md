@@ -63,7 +63,7 @@ Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania
 ### Wymagania
 
 *   Zainstalowane środowisko [Node.js](https://nodejs.org/) (wersja 16.x lub nowsza)
-*   Menedżer pakietów **npm** (dołączony do Node.js)
+*   Menedżer pakietów **npm** (dołączony do `Node.js`)
 *   Nowoczesna przeglądarka internetowa ze wsparciem dla WebGL
 
 ### Instrukcja
