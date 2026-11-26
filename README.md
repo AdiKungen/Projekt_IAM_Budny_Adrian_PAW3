@@ -53,7 +53,7 @@ Poniższa animacja przedstawia pełny cykl rozgrywki w aplikacji: od generowania
 
 * **Grafika 3D / WebGL:** [Three.js](https://threejs.org/) (renderowanie sceny 3D, oświetlenie, siatka geometrii, dynamiczne materiały i ramki bloków)
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+ Modules)
-* **Narzędzie deweloperskie / Bundler:** [Vite](https://vitejs.dev/) (Hot Module Replacement, szybki `dev-server`, modularność kodu)
+* **Narzędzie deweloperskie / Bundler:** [Vite](https://vitejs.dev/) (`Hot Module Replacement`, szybki dev-server, modularność kodu)
 * **Zarządzanie zależnościami:** [npm](https://www.npmjs.com/) (zarządzanie pakietami i skryptami projektu)
 
 ---
